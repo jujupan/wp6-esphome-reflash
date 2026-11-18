@@ -1,0 +1,16 @@
+# ESPHome build output
+/.esphome/
+
+# Credentials: never commit. Copy secrets.example.yaml to secrets.yaml instead.
+/secrets.yaml
+
+# Original Tuya firmware dumps can contain Wi-Fi passwords and the Tuya device key
+/backup/
+*.bin
+
+# Python
+/.venv/
+__pycache__/
+*.pyc
+
+.DS_Store

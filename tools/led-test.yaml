@@ -1,0 +1,26 @@
+# TEMPORARY test build: find which GPIO drives which LED. Same device name/IP as wp6-lamp.
+esphome:
+  name: wp6-lamp
+  friendly_name: WP6 Lamp
+  build_path: ../.esphome/build/led-test
+esp8266:
+  board: esp8285
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    password: !secret wifi_fallback_pw
+logger:
+  baud_rate: 0
+api:
+  reboot_timeout: 0s
+ota:
+  - platform: esphome
+switch:
+  - {platform: gpio, pin: GPIO14, name: Power}
+  - {platform: gpio, pin: GPIO1,  name: T GPIO1}
+  - {platform: gpio, pin: GPIO13, name: T GPIO13}
+  - {platform: gpio, pin: GPIO2,  name: T GPIO2}
+  - {platform: gpio, pin: GPIO4,  name: T GPIO4}
+  - {platform: gpio, pin: GPIO5,  name: T GPIO5}
+  - {platform: gpio, pin: GPIO12, name: T GPIO12}
