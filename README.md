@@ -23,6 +23,8 @@ The pins differ from some published WP6/WP3 pages, so these were tested one by o
 Use a **3.3 V** USB-to-serial adapter. Never 5 V, and never plug the plug into the
 wall while it is open or wired.
 
+![Where the wires go: C19 + pad, GND pad, bare LED leg, K1 leg and IO0 pad are soldered; RST is touched only](docs/solder-points.svg)
+
 | Plug point | Adapter pin |
 |---|---|
 | C19 `+` pad (main board) | 3V3 |

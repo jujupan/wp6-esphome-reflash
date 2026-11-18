@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" role="img" aria-label="Gosund WP6 solder points: C19 plus pad, GND pad, LED leg, K1 button leg and IO0 pad, plus the RST touch point">
+  <style>
+    .bg { fill: #ffffff; }
+    .ink { fill: #1f2328; }
+    .quiet { fill: #59636e; }
+    .line { stroke: #8c959f; fill: none; }
+    .dim { stroke: #8c959f; fill: none; }
+    .sleeve { stroke: #1f2328; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0d1117; }
+      .ink { fill: #e6edf3; }
+      .quiet { fill: #9198a1; }
+      .sleeve { stroke: #e6edf3; }
+    }
+    .on { fill: #1a9e8f; fill-opacity: 0.3; stroke: #1a9e8f; stroke-width: 2; }
+    .touch { fill: none; stroke: #d97706; stroke-width: 2; stroke-dasharray: 4 3; }
+    .badge { fill: #1a9e8f; }
+    .badge-touch { fill: #d97706; }
+    .num { fill: #ffffff; font-size: 12px; font-weight: 700; text-anchor: middle; }
+  </style>
+
+  <rect class="bg" x="0" y="0" width="820" height="600"/>
+
+  <text class="ink" x="24" y="34" font-size="16" font-weight="600">Gosund WP6 (T201-V1.0): where the wires go</text>
+  <text class="quiet" x="24" y="56" font-size="12">5 soldered points + 1 touch point · positions approximate · never plug into the wall while wired</text>
+
+  <!-- ===== Module (back) ===== -->
+  <rect class="line" x="40" y="80" width="280" height="230" rx="4" stroke-width="1.25"/>
+  <text class="ink" x="180" y="104" text-anchor="middle" font-weight="600">T201 module (back)</text>
+  <text class="quiet" x="180" y="121" text-anchor="middle" font-size="11.5">stands vertically on the main board</text>
+
+  <!-- GND pads -->
+  <rect class="on" x="56" y="146" width="20" height="26" rx="3"/>
+  <text class="ink" x="82" y="164" font-size="11.5" font-weight="600">GND</text>
+  <rect x="284" y="146" width="20" height="26" rx="3" fill="none" stroke="#1a9e8f" stroke-width="1.25"/>
+  <text class="quiet" x="278" y="164" text-anchor="end" font-size="11.5">GND (either)</text>
+  <circle class="badge" cx="66" cy="194" r="10"/><text class="num" x="66" y="198">2</text>
+
+  <!-- IO pads -->
+  <circle class="dim" cx="100" cy="246" r="7" stroke-width="1.25"/>
+  <text class="quiet" x="100" y="270" text-anchor="middle" font-size="11">IO5</text>
+  <circle class="on" cx="160" cy="246" r="7"/>
+  <text class="ink" x="160" y="270" text-anchor="middle" font-size="11.5" font-weight="600">IO0</text>
+  <circle class="badge" cx="160" cy="220" r="10"/><text class="num" x="160" y="224">5</text>
+  <circle class="dim" cx="200" cy="282" r="7" stroke-width="1.25"/>
+  <text class="quiet" x="200" y="302" text-anchor="middle" font-size="11">IO13</text>
+  <circle class="dim" cx="240" cy="282" r="7" stroke-width="1.25"/>
+  <text class="quiet" x="240" y="302" text-anchor="middle" font-size="11">IO2</text>
+  <circle class="touch" cx="282" cy="282" r="7"/>
+  <text class="ink" x="282" y="302" text-anchor="middle" font-size="11.5" font-weight="600">RST</text>
+  <circle class="badge-touch" cx="282" cy="256" r="10"/><text class="num" x="282" y="260">6</text>
+
+  <!-- Edge joints (unreachable) -->
+  <g class="dim" stroke-width="1.25">
+    <rect x="62" y="310" width="12" height="12" rx="2"/><rect x="88" y="310" width="12" height="12" rx="2"/>
+    <rect x="114" y="310" width="12" height="12" rx="2"/><rect x="140" y="310" width="12" height="12" rx="2"/>
+    <rect x="166" y="310" width="12" height="12" rx="2"/><rect x="192" y="310" width="12" height="12" rx="2"/>
+    <rect x="218" y="310" width="12" height="12" rx="2"/><rect x="244" y="310" width="12" height="12" rx="2"/>
+    <rect x="270" y="310" width="12" height="12" rx="2"/>
+  </g>
+  <text class="quiet" x="296" y="320" font-size="11">← edge joints: hidden, not used</text>
+
+  <!-- ===== Key ===== -->
+  <text class="ink" x="360" y="104" font-weight="600">Point → USB-to-serial adapter (3.3 V)</text>
+
+  <circle class="badge" cx="370" cy="132" r="10"/><text class="num" x="370" y="136">1</text>
+  <text class="ink" x="390" y="132" font-weight="600">C19 + pad → 3V3</text>
+  <text class="quiet" x="390" y="148" font-size="11.5">the module's own 3V3 pin is hidden</text>
+
+  <circle class="badge" cx="370" cy="170" r="10"/><text class="num" x="370" y="174">2</text>
+  <text class="ink" x="390" y="170" font-weight="600">GND pad → GND</text>
+  <text class="quiet" x="390" y="186" font-size="11.5">either labelled GND pad</text>
+
+  <circle class="badge" cx="370" cy="208" r="10"/><text class="num" x="370" y="212">3</text>
+  <text class="ink" x="390" y="208" font-weight="600">LED leg, no sleeve → RXD</text>
+  <text class="quiet" x="390" y="224" font-size="11.5">chip TX (GPIO1)</text>
+
+  <circle class="badge" cx="370" cy="246" r="10"/><text class="num" x="370" y="250">4</text>
+  <text class="ink" x="390" y="246" font-weight="600">K1 leg, not ground → TXD</text>
+  <text class="quiet" x="390" y="262" font-size="11.5">chip RX (GPIO3): the legs that don't beep to GND</text>
+
+  <circle class="badge" cx="370" cy="284" r="10"/><text class="num" x="370" y="288">5</text>
+  <text class="ink" x="390" y="284" font-weight="600">IO0 pad → GND, for flashing only</text>
+  <text class="quiet" x="390" y="300" font-size="11.5">move it off GND to boot normally</text>
+
+  <circle class="badge-touch" cx="640" cy="132" r="10"/><text class="num" x="640" y="136">6</text>
+  <text class="ink" x="660" y="132" font-weight="600">RST pad: touch only</text>
+  <text class="quiet" x="660" y="148" font-size="11.5">tap to GND with a loose</text>
+  <text class="quiet" x="660" y="163" font-size="11.5">jumper to reset the chip</text>
+
+  <!-- ===== Main board ===== -->
+  <rect class="line" x="40" y="340" width="740" height="236" rx="8" stroke-width="1.25"/>
+  <text class="ink" x="56" y="364" font-weight="600">Main board</text>
+
+  <!-- C19 -->
+  <rect class="on" x="120" y="404" width="28" height="22" rx="3"/>
+  <rect class="dim" x="120" y="446" width="28" height="22" rx="3" stroke-width="1.25"/>
+  <text class="ink" x="112" y="420" text-anchor="end" font-size="15" font-weight="700">+</text>
+  <text class="quiet" x="112" y="462" text-anchor="end" font-size="15">−</text>
+  <text class="ink" x="134" y="494" text-anchor="middle" font-weight="600">C19</text>
+  <text class="quiet" x="134" y="511" text-anchor="middle" font-size="11.5">+ pad = 3V3</text>
+  <circle class="badge" cx="170" cy="415" r="10"/><text class="num" x="170" y="419">1</text>
+
+  <!-- K1 button -->
+  <rect class="line" x="350" y="400" width="64" height="64" rx="4" stroke-width="1.25"/>
+  <circle class="line" cx="382" cy="432" r="18" stroke-width="1.25"/>
+  <text class="ink" x="382" y="437" text-anchor="middle" font-weight="600">K1</text>
+  <circle class="dim" cx="342" cy="392" r="6" stroke-width="1.25"/>
+  <circle class="dim" cx="422" cy="392" r="6" stroke-width="1.25"/>
+  <circle class="on" cx="342" cy="472" r="6"/>
+  <circle class="dim" cx="422" cy="472" r="6" stroke-width="1.25" stroke-dasharray="3 2"/>
+  <circle class="badge" cx="318" cy="456" r="10"/><text class="num" x="318" y="460">4</text>
+  <text class="quiet" x="382" y="500" text-anchor="middle" font-size="11.5">one pair = GND, other pair = RX:</text>
+  <text class="quiet" x="382" y="515" text-anchor="middle" font-size="11.5">find them with the meter</text>
+
+  <!-- LED -->
+  <rect class="line" x="590" y="400" width="44" height="26" rx="10" stroke-width="1.25"/>
+  <text class="ink" x="612" y="418" text-anchor="middle" font-size="11.5" font-weight="600">LED</text>
+  <path class="line" d="M602 426V468" stroke-width="2"/>
+  <path class="sleeve" d="M622 430V464" stroke-width="6" stroke-linecap="round"/>
+  <path class="line" d="M622 426V468" stroke-width="2"/>
+  <circle class="on" cx="602" cy="474" r="6"/>
+  <circle class="dim" cx="622" cy="474" r="6" stroke-width="1.25"/>
+  <circle class="badge" cx="578" cy="458" r="10"/><text class="num" x="578" y="462">3</text>
+  <text class="quiet" x="650" y="452" font-size="11.5">← black sleeve:</text>
+  <text class="quiet" x="650" y="467" font-size="11.5">not this leg</text>
+  <text class="quiet" x="602" y="502" text-anchor="middle" font-size="11.5">bare leg = TX</text>
+
+  <text class="quiet" x="56" y="556" font-size="11.5">The module stands vertically, so its edge joints are out of reach: 3V3, TX and RX come from C19, the LED and K1 instead.</text>
+</svg>
