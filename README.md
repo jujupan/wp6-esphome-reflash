@@ -30,7 +30,7 @@ wall while it is open or wired.
 | C19 `+` pad (main board) | 3V3 |
 | GND pad (back of module) | GND |
 | LED leg without the black sleeve (chip TX) | RXD |
-| Lower leg of button K1, the one that is *not* ground (chip RX) | TXD |
+| Leg of button K1 on the side *away* from the K1 marking (chip RX); the pair next to the marking is GND | TXD |
 | IO0 pad (back of module) | GND, only for flashing |
 
 The module's real 3V3 pin is hidden, which is why C19 `+` is used.
