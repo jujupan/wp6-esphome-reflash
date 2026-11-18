@@ -25,6 +25,21 @@ wall while it is open or wired.
 
 ![Where the wires go: C19 + pad, GND pad, bare LED leg, K1 leg and IO0 pad are soldered; RST is touched only](docs/solder-points.svg)
 
+### Photos of this unit
+
+<table>
+  <tr>
+    <td><img src="docs/photos/board-overview.jpg" width="260" alt="Main board WP6_A_V1.2 with C19, LED1 and K1 below the module"></td>
+    <td><img src="docs/photos/module-back.jpg" width="260" alt="T201 module standing vertically behind the LED and button"></td>
+    <td><img src="docs/photos/module-edge.jpg" width="260" alt="Module seated in the main board, showing the row of edge joints"></td>
+  </tr>
+  <tr>
+    <td><b>Main board</b> (WP6_A_V1.2, 2019-07-05). Top to bottom under the module: LED1 (point 3), K1 (point 4), and C19 on the left with its <b>+</b> marking (point 1).</td>
+    <td><b>Module back.</b> The T201 stands vertically, right behind the LED and the button, so the labelled pads (GND, IO0, RST) face you.</td>
+    <td><b>Module edge.</b> The joints at the module's base are the edge joints: too tight to reach, which is why 3V3, TX and RX come from the main board. Label blurred.</td>
+  </tr>
+</table>
+
 | Plug point | Adapter pin |
 |---|---|
 | C19 `+` pad (main board) | 3V3 |
