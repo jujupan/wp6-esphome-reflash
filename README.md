@@ -38,6 +38,16 @@ wall while it is open or wired.
     <td><b>Module back.</b> The T201 stands vertically, right behind the LED and the button, so the labelled pads (GND, IO0, RST) face you.</td>
     <td><b>Module edge.</b> The joints at the module's base are the edge joints: too tight to reach, which is why 3V3, TX and RX come from the main board. Label blurred.</td>
   </tr>
+  <tr>
+    <td><img src="docs/photos/wired-module.jpg" width="260" alt="First three wires soldered: teal on C19 plus, teal on the module GND pad, blue on the bare LED leg"></td>
+    <td><img src="docs/photos/bench-setup.jpg" width="260" alt="Bench with the open plug wired to a breadboard and USB-to-serial adapter, soldering station, flux and wick"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>First three wires.</b> Teal on the C19 <b>+</b> pad (point 1), teal on the module's GND pad (point 2), blue on the bare LED leg (point 3). The RX and IO0 wires came later.</td>
+    <td><b>The bench.</b> The open plug wired to the breadboard and the 3.3 V USB-to-serial adapter, with the soldering station, flux and wick.</td>
+    <td></td>
+  </tr>
 </table>
 
 | Plug point | Adapter pin |
