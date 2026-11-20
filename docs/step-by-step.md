@@ -52,7 +52,9 @@ numbered as in the [diagram](solder-points.svg). The pins are in the
 ## B. Open the plug
 
 7. Make sure that the plug is not in the wall.
-8. Open the case. Use a plastic pry tool, not a metal screwdriver.
+8. Push a thin, flat blade into the seam of the case and pry it open. This unit
+   was opened with an offset spatula. A flathead screwdriver also works.
+   Pry slowly around the seam. Do not push the blade deep into the case.
 9. Find the parts. Refer to `docs/photos/board-overview.jpg`:
    - The T201 module stands vertically on the main board.
    - The GND, IO0 and RST pads are on the back of the module.
@@ -152,7 +154,7 @@ the main board.
 ## J. Remove the wires and close the plug
 
 35. Disconnect the USB cable. Disconnect all wires from the adapter.
-36. Desolder all five wires from the plug.
+36. Desolder all five wires from the plug. Do this before you close the case.
 37. Clean the flux from each joint with isopropyl alcohol and a brush. Let it dry.
 38. Examine the board. Make sure that there are no solder balls, wire strands or
     bridges between pads. Make sure that C19, the LED and K1 are not damaged.
@@ -167,8 +169,9 @@ the main board.
     show the Power state.
 44. Wait 5 minutes. Then touch the case. If it is warm, disconnect the plug from
     the wall and do not use it.
-45. Add the plug to Home Assistant: **Settings > Devices & services**. ESPHome
-    finds `wp6-lamp`. Select **Configure**.
+45. Add the plug to Home Assistant. After the plug is in the wall, it shows in
+    the **Devices** tab as a discovered ESPHome device (`wp6-lamp`). Select it
+    and select **Configure**.
 46. Connect the load. Make sure that Home Assistant can switch it.
 
 ## If you need the original firmware again
