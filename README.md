@@ -74,9 +74,12 @@ The module's real 3V3 pin is hidden, which is why C19 `+` is used.
 
 ## Steps
 
+For the full procedure, from opening the plug to plugging it back in, see
+**[docs/step-by-step.md](docs/step-by-step.md)**. The short version:
+
 ```sh
 uv venv --python 3.13 .venv
-uv pip install --python .venv/bin/python esphome esptool pyserial
+uv pip install --python .venv/bin/python esphome esptool pyserial aioesphomeapi
 cp secrets.example.yaml secrets.yaml   # then edit it
 
 PORT=/dev/cu.usbserial-0001
